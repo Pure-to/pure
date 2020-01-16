@@ -5,7 +5,7 @@
     a:active{text-decoration:none;}/* 指正在点的链接*/
     .wx{
         width: 90%;
-        margin-left: 5%;
+        margin-left: 10%;
         font-size: 18px;
         color:white;
         text-align: center;
@@ -55,31 +55,11 @@
     }
 </style>
 
-
-第一种：点击后直接复制并跳转微信界面
 <div class="row">
      <div class="wx" onclick="copywx()">
-         <a href="weixin://"><span id="copy_content">136xxxx6510</span>（微信同号）,复制跳转微信</>
+         <a href="weixin://"><span id="copy_content">yunquea123</span>（微信同号）,复制跳转微信</>
      </div>
 </div>
-
-第二种：点击后出现弹框，复制并跳转微信界面
-<div class="row">
-    <div class="wx" onclick="showwx()">添加微信了解更多</div>
-</div>
-
-    <!--弹窗-->
-    <div id='myshow' class="tan">
-        <div class="kuang">
-            咨询学费<br/>
-            了解更多<br/>
-            请添加微信:<br/>
-            <span id="copy_content" class="txtcss">136xxxx6510</span>
-        </div>
-        <div style="height: 10px;"></div>
-        <p onclick="copywx()" class="copy"><a href="weixin://">复制并跳转微信</a></p>
-        <div onclick="closeshow()" class="closeshow pull-right guanbi">x</div>
-    </div>
 
 
 <script>
@@ -92,15 +72,5 @@
         selection.addRange(range);
         document.execCommand('copy');
         alert("复制成功！");
-    }
-    /*点击出现弹框*/
-    function showwx(){
-        var ss=document.getElementById('myshow');
-        ss.style.display='block';
-    }
-    /*关闭弹窗*/
-    function closeshow(){
-        var ss=document.getElementById('myshow');
-        ss.style.display='none';
     }
 </script>
