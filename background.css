@@ -1,0 +1,6 @@
+body{
+  background-color:#ffffff;
+  backgroung-image:url("bt.png");
+  background-repeat: repeat-x;
+  bckgroud-attachment:fixed;
+}
