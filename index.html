@@ -3,30 +3,72 @@
     a:visited{text-decoration:none;}/*指已经访问过的链接*/
     a:hover{text-decoration:none;}/*指鼠标在链接*/
     a:active{text-decoration:none;}/* 指正在点的链接*/
-    .wx{
-      	width：80%
-        margin-top: 250px;
+    body{
+    background-image:url("https://loveyouzoo.files.wordpress.com/2020/01/img_20200117_175005.png");
+      background-repeat:repeat-x;
+  }
+	.card {
+        margin-top: 50px;
         margin-left: 10%;
       	margin-right: 10%;
-        font-size: 48px;
-        text-align: center;
-        background-color: #ff5f5e;
-        border-radius: 20px;
+   		box-shadow: 2px 4px 6px 2px rgba(0,0,0,0.2);
+    	transition: 0.3s;
+    	width: 80%;
+   	    border-radius: 20px;
+}
+
+	.card:hover {
+    box-shadow: 2px 4px 6px 2px rgba(0,0,0,0.2);
+}
+
+	img {
+    border-radius: 20px 20px 20px 20px;
+}
+    .container{
+      	width：90%;
+        margin-top: 10px;
+        margin-left: 10%;
+      	margin-right: 10%;
+        font-size: 28px;
+        background-color: #ffffff;
+        border-radius: 10px;
         line-height: 150px;
+      	box-shadow: 2px 2px 4px 2px rgba(0,0,0,0.2);
+    } 
+  .wx{
+      	width：90%
+        margin-left: 10%;
+      	margin-right: 10%;
+        background-color: #ffffff;
+        line-height: 80px;
+    	border-radius: 10px;
     }
-    .wx a{
-        font-size: 48px;
-        color:white;
-    }   
+  .kuang{
+      	width：80%;
+        margin-top: 50px;
+        margin-left: 10%;
+      	margin-right: 10%;
+        font-size: 28px;
+        background-color: #ffffff;
+        border-radius: 20px;
+        line-height: 70px;
+      	box-shadow: 2px 2px 4px 2px rgba(0,0,0,0.2);
+    } 
 </style>
-
-<div class="row">
-     <div class="wx" onclick="copywx()">
-         <a href="weixin://"><span id="copy_content">yunquea123</span>,复制跳转微信</>
-     </div>
+<div class="kuang">
+ <img src="https://loveyouzoo.files.wordpress.com/2020/01/000.png" alt="Avatar" style="width:15%">
+  </div>
+<div class="card">
+  <img src="https://loveyouzoo.files.wordpress.com/2020/01/img_20200117_175234.png" alt="Avatar" style="width:100%">
+  <br>
+  <br/>
+  <div class="container">
+  <div class="wx" onclick="copywx()">
+  Wechat<h5><a href="weixin://"><span style="color:#606060"id="copy_content">yunquea123</span></a></h5> 
+  </div>
+  </div>
+  <img src="https://loveyouzoo.files.wordpress.com/2020/01/img_20200117_190322.png" alt="Avatar" style="width:100%">
 </div>
-
-
 <script>
     /*点击复制微信号*/
     function copywx(){
@@ -39,4 +81,3 @@
         alert("复制成功！");
     }
 </script>
-
